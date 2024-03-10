@@ -9,10 +9,10 @@ public class User {
     @Id
     private Long id;
 
-    @Column
+    @Column(name = "name")
     private String name;
 
-    @Column
+    @Column(name = "lastName")
     private String lastName;
 
     @Column
@@ -26,6 +26,11 @@ public class User {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    @Override
+    public String toString(){
+        return "Name: " + this.name + "\nLastName: " + this.lastName + "\nAge: " + this.age;
     }
 
     public Long getId() {
