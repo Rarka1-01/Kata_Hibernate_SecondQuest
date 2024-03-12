@@ -32,7 +32,7 @@ public class Main {
 
         List<User> users = uS.getAllUsers();
 
-        for(User user: users){
+        for (User user : users) {
             System.out.println(user + "\n");
         }
 

@@ -9,7 +9,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserDaoJDBCImpl uD;
 
-    public UserServiceImpl(){
+    public UserServiceImpl() {
         uD = new UserDaoJDBCImpl();
     }
 
